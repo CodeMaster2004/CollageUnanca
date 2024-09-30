@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Carta</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tarjeta1">
+            <h1 class="titulo">MI HERMOSA TIERRA</h1>
+
+            <p class="texto">
+                Capilla de Unanca es una comunidad peruana profundamente conectada con su rica historia,
+                cultura y entorno natural. La capilla que da nombre al lugar es el corazón de la vida 
+                comunitaria, donde generaciones han celebrado eventos religiosos y sociales. Las festividades,
+                danzas y artesanías, como tejidos y cerámicas, reflejan la fuerte identidad y legado ancestral
+                de sus habitantes.
+
+                Rodeada de un hermoso paisaje montañoso y ríos cristalinos, Capilla de Unanca ha adoptado prácticas
+                de desarrollo sostenible, promoviendo la agricultura y el turismo responsable. En los últimos años,
+                ha logrado avances en educación y salud, mejorando la calidad de vida de la comunidad. Gracias a la
+                colaboración de sus habitantes, se han implementado proyectos que buscan preservar el entorno natural
+                y fomentar la participación activa de la población en el desarrollo local. Este pueblo es un verdadero
+                tesoro cultural en el corazón del Perú, donde tradición y progreso conviven en armonía.
+
+            </p>
+            <a href="index3.html">
+                <button class="button" onclick="">
+
+        
+                    <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+            
+                    
+                    <div class="text">
+                        siguiente
+                    </div>
+            
+                </button>
+
+            </a>
+            
+            
+        </div>
+        /* From Uiverse.io by reshades */ 
+
+        <audio class="audio" src="audio.mp3" controls autoplay></audio>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.responsive-video');
+
+            video.play().catch(error => {
+                console.error('La reproducción automática fue bloqueada:', error);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
