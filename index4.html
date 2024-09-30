@@ -13,6 +13,7 @@
 
 <body>
   <div class="container">
+    <audio class="audio" src="carrusuel.mp3" controls autoplay></audio>
 
     <div class="slide">
 
@@ -146,14 +147,24 @@
 
   </a>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const video = document.querySelector('.responsive-video');
+    // Obtener el audio y el video usando las clases correctas
+    var audio = document.querySelector('.audio');
+    var video = document.querySelector('.video');
 
-      video.play().catch(error => {
-        console.error('La reproducción automática fue bloqueada:', error);
-      });
+    // Pausar el audio cuando el video comienza
+    video.addEventListener('play', function () {
+      audio.pause();
     });
 
+    // Reanudar el audio cuando el video termine o se pause
+    video.addEventListener('ended', function () {
+      audio.play();
+    });
+
+    // Reanudar el audio si el video se pausa manualmente
+    video.addEventListener('pause', function () {
+      audio.play();
+    });
   </script>
   <script src="script2.js"></script>
 </body>

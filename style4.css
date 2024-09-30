@@ -161,9 +161,12 @@ body {
 .video {
     position: relative;
     display: flex;
-    width: 25vh;
+    width: 20vh;
     top: 18vh;
-    left: 8vh; /* Mantiene la proporción correcta del video */
+    left: 18vh; /* Mantiene la proporción correcta del video */
+}
+.audio{
+    display: none;
 }
 
 

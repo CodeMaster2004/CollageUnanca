@@ -61,7 +61,7 @@ body {
   .character {
     font-size: 7vh;
   
-    background-image: linear-gradient(to right, rgb(43, 0, 255), rgb(17, 255, 0), rgb(0, 244, 240), rgb(68, 0, 255));
+    background-image: linear-gradient(to right, rgb(255, 0, 166), rgb(255, 0, 0), rgb(244, 0, 73), rgb(255, 0, 0));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -122,4 +122,7 @@ body {
   .made-with-love a {
     font-weight: bold;
     /* Añadiendo negrita solo a los enlaces */
+  }
+  .audio{
+    display: none;
   }
