@@ -163,7 +163,6 @@ body {
     display: flex;
     width: 20vh;
     top: 18vh;
-    left: 18vh; /* Mantiene la proporción correcta del video */
 }
 .audio{
     display: none;
